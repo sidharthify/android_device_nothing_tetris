@@ -74,6 +74,13 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci \
+    Tag \
+    SecureElement
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-mediatek.xml
