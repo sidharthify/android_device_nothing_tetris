@@ -1115,6 +1115,9 @@ on boot
     chmod 770 /proc/nt_value_check/value_check_node
     chown system system /proc/nt_value_check/value_check_node
 
+    chmod 666 /sys/devices/platform/soc/1401a000.dsi0/hbm
+    chmod 666 /sys/panel_feature/ui_status
+
     # Disable serial console
     stop console
 
