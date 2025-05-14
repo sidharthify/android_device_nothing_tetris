@@ -274,6 +274,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6878
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio-V2-ndk.vendor \

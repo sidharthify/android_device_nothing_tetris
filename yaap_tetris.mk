@@ -9,13 +9,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from tetris device
 $(call inherit-product, device/nothing/tetris/device.mk)
 
-PRODUCT_NAME := lineage_tetris
+PRODUCT_NAME := yaap_tetris
 PRODUCT_DEVICE := tetris
 PRODUCT_BRAND := Nothing
 PRODUCT_MANUFACTURER := Nothing
@@ -24,6 +24,6 @@ PRODUCT_MODEL := A015
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Tetris 14 UP1A.231005.007 2412042338 release-keys"
-
-BUILD_FINGERPRINT := Nothing/Tetris/Tetris:14/UP1A.231005.007/2412042338:user/release-keys
+    BuildDesc="Tetris 15 AP3A.240905.015 2502082015 release-keys" \
+    BuildFingerprint=Nothing/Tetris/Tetris:15/AP3A.240905.015.A2/2502082015:user/release-keys \
+    DeviceProduct=$(PRODUCT_DEVICE)
